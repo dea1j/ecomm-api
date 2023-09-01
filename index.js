@@ -5,7 +5,7 @@ const crypto = require("crypto");
 const nodemailer = require("nodemailer");
 
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 const cors = require("cors");
 const { JsonWebTokenError } = require("jsonwebtoken");
 app.use(cors());
